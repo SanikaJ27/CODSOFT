@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Company</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0B0C10; /* Dark green background */
+      color: #C5C6C7; /* Light gray text color */
+    }
+
+    header {
+      background-color: #1F2833; /* Dark blue */
+      color: #66FCF1; /* Light blue text color */
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      font-weight: normal;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    nav {
+      background-color: #1F2833; /* Dark blue */
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #66FCF1; /* Light blue */
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #45A29E; /* Darker blue on hover */
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    section#services {
+      background-color: #1F2833; /* Dark blue */
+      overflow-x: scroll; /* Enable sideways scrolling */
+      white-space: nowrap; /* Prevent line breaks */
+    }
+
+    section#services div {
+      display: inline-block; /* Display services side by side */
+      margin: 0 20px; /* Add some space between services */
+      vertical-align: top; /* Align to the top */
+    }
+
+    .service {
+      background-color: #1F2833; /* Dark blue */
+      color: #C5C6C7; /* Light gray text color */
+      padding: 20px;
+      border-radius: 10px; /* Rounded corners */
+      width: 250px; /* Set fixed width */
+      display: inline-block;
+      text-align: left; /* Align text to the left */
+    }
+
+    .service h3 {
+      margin-top: 0;
+    }
+
+    .service p {
+      margin-bottom: 10px;
+    }
+
+    .service a {
+      color: #66FCF1; /* Light blue */
+      text-decoration: none;
+      border: 1px solid #66FCF1; /* Light blue border */
+      padding: 5px 10px;
+      border-radius: 5px; /* Rounded corners */
+      transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    }
+
+    .service a:hover {
+      background-color: #66FCF1; /* Light blue */
+      color: #0B0C10; /* Dark green on hover */
+      border-color: #0B0C10; /* Dark green border on hover */
+    }
+
+    .testimonial {
+      background-color: #1F2833; /* Dark blue */
+      color: #C5C6C7; /* Light gray text color */
+      padding: 40px 20px;
+      border-radius: 10px; /* Rounded corners */
+      margin: 40px 0;
+      text-align: left;
+    }
+
+    .testimonial p {
+      margin-bottom: 20px;
+    }
+
+    .testimonial p:last-child {
+      margin-bottom: 0;
+    }
+
+    .testimonial img {
+      width: 60px; /* Set image width */
+      border-radius: 50%; /* Circular image */
+      margin-right: 15px; /* Add space between image and text */
+      float: left; /* Float image to the left */
+    }
+
+    footer {
+      background-color: #1F2833; /* Dark blue */
+      color: #C5C6C7; /* Light gray text color */
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    /* Contact Form Styling */
+    .contact-form {
+      background-color: #1F2833; /* Dark blue */
+      padding: 40px 20px;
+      border-radius: 10px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #66FCF1; /* Light blue border */
+      border-radius: 5px;
+      background-color: #C5C6C7; /* Light gray */
+      color: #0B0C10; /* Dark green text color */
+    }
+
+    .contact-form textarea {
+      resize: none; /* Disable textarea resizing */
+    }
+
+    .contact-form input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #66FCF1; /* Light blue */
+      color: #0B0C10; /* Dark green text color */
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* Smooth background color transition */
+    }
+
+    .contact-form input[type="submit"]:hover {
+      background-color: #45A29E; /* Darker blue on hover */
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>IT Company</h1>
+    <p>Empowering Innovation</p>
+  </header>
+
+  <!-- Navigation Section -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Welcome to IT Company</h2>
+    <p>We specialize in providing cutting-edge solutions in database engineering, UI/UX design, and backend development. Our mission is to empower innovation and drive digital transformation for businesses worldwide.</p>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to IT Company! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Services</h2>
+    <div class="service">
+      <h3>Database Engineering</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <a href="#database">Learn More</a>
+    </div>
+    <div class="service">
+      <h3>UI/UX Design</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <a href="#ui-ux">Learn More</a>
+    </div>
+    <div class="service">
+      <h3>Backend Development</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <a href="#backend">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Check out our latest projects and client success stories:</p>
+    <!-- Portfolio items will be added here -->
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog">
+    <h2>Blog</h2>
+    <p>Stay updated with our latest insights and industry trends:</p>
+    <!-- Blog posts will be added here -->
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <p>Get in touch with us:</p>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br>
+        <input type="submit" value="Send Message">
+      </form>
+    </div>
+  </section>
+
+  <!-- Client Testimonials Section -->
+  <section id="testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial">
+      <img src="avatar1.jpg" alt="Client 1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>- Client 1</p>
+    </div>
+    <div class="testimonial">
+      <img src="avatar2.jpg" alt="Client 2">
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>- Client 2</p>
+    </div>
+  </section>
+
+  <!-- Careers Section -->
+  <section id="careers">
+    <h2>Careers</h2>
+    <p>Join our team and be part of our journey:</p>
+  </section>
+
+  <!-- FAQs Section -->
+  <section id="faqs">
+    <h2>FAQs</h2>
+    <p>Find answers to common questions:</p>
+  </section>
+
+  <!-- Resources Section -->
+  <section id="resources">
+    <h2>Resources</h2>
+    <p>Download our resources:</p>
+  </section>
+
+  <!-- Partnerships Section -->
+  <section id="partnerships">
+    <h2>Partnerships</h2>
+    <p>Discover our strategic alliances:</p>
+  </section>
+
+  <!-- Press/Media Section -->
+  <section id="press">
+    <h2>Press/Media</h2>
+    <p>Read about our latest news and media coverage:</p>
+  </section>
+
+  <!-- Privacy Policy/Terms of Service Section -->
+  <section id="privacy">
+    <h2>Privacy Policy/Terms of Service</h2>
+    <p>Review our legal documents:</p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 IT Company. All rights reserved.</p>
+  </footer>
+</body>
+</html>
